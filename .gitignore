@@ -1,0 +1,10 @@
+*.mp3
+*.wav
+.idea
+venv/
+secrets.json
+*.pyc
+__pycache__/
+.DS_Store
+opic_s1/*.mp3
+opic_s1_feedback/*.mp3
