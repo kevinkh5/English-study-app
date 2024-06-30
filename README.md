@@ -10,10 +10,38 @@
 
 <img src="assets/opic_practice_demo.png" width="700" height="700" alt="error1">
 
+## 파일설명
+### app.py
+- 간단한 서비스의 화면을 빠르게 구현하기 위한 프레임워크 Streamlit을 사용한 코드가 작성되어 있습니다.
+- Streamlit 서버를 가동할 시 해당 파일을 로드합니다.
+
+### backend.py
+- FastAPI를 사용한 Backend API가 작성되어 있습니다. 
+- FastAPI 서버를 가동할 시 해당 파일을 로드합니다.
+
+### opic_section1_collection.py
+- 해당파일은 오픽연습 탭에서 학습 할 질문 예시를 딕셔너리 형태로 작성해놓았습니다.
+
+### prompt_collection.py
+- 해당파일에는 LLM에게 사전에 지시할 프롬프트를 작성해놓았습니다.
+
 ## 환경
 - python 3.11
 
-## 실행방법
+## 셋팅 및 실행
+
+- OPENAI_API_KEY 셋팅
+
+secrets.json 파일을 생성하여 아래 코드 작성
+```python
+{"OPENAI_API_KEY":"API키를 작성해주세요"}
+```
+
+- requirements.txt 설치 
+```commandline
+pip install -r requirements.txt
+```
+
 - FastAPI 서버 가동
 ```commandline
 uvicorn backend:app --reload
